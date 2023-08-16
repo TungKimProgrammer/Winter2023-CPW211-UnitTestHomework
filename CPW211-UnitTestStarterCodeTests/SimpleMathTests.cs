@@ -20,13 +20,13 @@ namespace CPW211_UnitTestStarterCode.Tests
         public void Add_TwoNumbers_ReturnsSum(double num1, double num2)
         {
             // Arrange 
-            double expectedValue = num1 + num2;
+            double expected = num1 + num2;
 
             // Act
-            double returnValue = SimpleMath.Add(num1, num2);
+            double actual = SimpleMath.Add(num1, num2);
 
             // Assert
-            Assert.AreEqual(expectedValue, returnValue);
+            Assert.AreEqual(expected, actual);
         }
 
 
@@ -39,13 +39,13 @@ namespace CPW211_UnitTestStarterCode.Tests
         public void Multiply_TwoNumbers_ReturnsProduct(double num1, double num2)
         {
             // Arrange 
-            double expectedValue = num1 * num2;
+            double expected = num1 * num2;
 
             // Act
-            double returnValue = SimpleMath.Multiply(num1, num2);
+            double actual = SimpleMath.Multiply(num1, num2);
 
             // Assert
-            Assert.AreEqual(expectedValue, returnValue);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -69,13 +69,13 @@ namespace CPW211_UnitTestStarterCode.Tests
         public void Divide_TwoValidNumbers_ReturnsProduct(double num1, double num2)
         {
             // Arrange 
-            double expectedValue = num1 / num2;
+            double expected = num1 / num2;
 
             // Act
-            double returnValue = SimpleMath.Divide(num1, num2);
+            double actual = SimpleMath.Divide(num1, num2);
 
             // Assert
-            Assert.AreEqual(expectedValue, returnValue);
+            Assert.AreEqual(expected, actual);
         }
 
         // TODO: Test subtract method with two valid numbers
@@ -88,13 +88,13 @@ namespace CPW211_UnitTestStarterCode.Tests
         public void Subtract_TwoValidNumbers_ReturnsProduct(double num1, double num2)
         {
             // Arrange 
-            double expectedValue = num1 - num2;
+            double expected = num1 - num2;
 
             // Act
-            double returnValue = SimpleMath.Subtract(num1, num2);
+            double actual = SimpleMath.Subtract(num1, num2);
 
             // Assert
-            Assert.AreEqual(expectedValue, returnValue);
+            Assert.AreEqual(expected, actual);
         }
     }
 }
